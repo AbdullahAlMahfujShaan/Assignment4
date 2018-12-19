@@ -19,17 +19,17 @@ void BubbleSort::BubbleSorting(int *arr, int n)
 	{
 		swapped = false;
 		j++;
-		for (int index = 0; index < n - j; ++i;)
+		for (int index = 0; index < n - j; ++j)
 		{
 			if (arr[index] > arr[index+1])
 			{
-				temp = arr[i];
+				temp = arr[j];
 				arr[index] = arr[index + 1];
 				arr[index + 1] = temp;
 				swapped = true;
-				for (int k = 0; k < n; ++k;)
+				for (int k = 0; k < n; ++k)
 				{
-					cout << arr[k] << " ";
+					cout << arr[k] << " " << endl;
 				}
 				cout << endl;
 			}
